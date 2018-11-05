@@ -1,0 +1,44 @@
+﻿cnpm i lib-flexible --save
+
+cnpm install px2rem-loader
+
+cnpm install axios --save
+
+cnpm i mint-ui -S
+
+cnpm install
+
+npm run dev
+params:{},
+
+v-if="activityData.length == 0"
+ v-for="item in activityData"
+
+ @click="$router.push({name: '/goodsdetail',query:{goods_id: item.goods_id}})"
+
+ // 获取列表方法
+           /* getList(){
+                this.$http //列表加载
+                    .post(this.url + "admin/adminList", {
+                        page:this.page,
+                        pageSize: this.pageSize,
+                        isUse: this.isUse,
+                        // 销货单号
+                        shopCode:sessionStorage.getItem('shopCode'),
+                        //开始时间
+                        // yardCode: this.yardCode,
+                    })
+                    .then(
+                        resp => {
+                            this.tableData = resp.data.PageInfo.list;
+                            this.total =resp.data.PageInfo.total;
+                        },
+                        response => {
+                            this.$message({
+                                message: response.status + ",服务器繁忙请稍后再试！",
+                                type: "error"
+                            });
+                        }
+                    );
+            }*/
+
